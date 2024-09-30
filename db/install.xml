@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Definición del esquema de base de datos para el plugin ChatGPT -->
+<XMLDB PATH="db" VERSION="2023091700" COMMENT="Database schema for the ChatGPT plugin">
+
+    <!-- Definición de las tablas en la base de datos -->
+    <TABLES>
+
+        <!-- Definición de una tabla de prueba llamada 'local_chatgpt_test' -->
+        <TABLE NAME="local_chatgpt_test" COMMENT="Tabla de prueba">
+            
+            <!-- Definición de los campos de la tabla -->
+            <FIELDS>
+                
+                <!-- Campo 'id' de tipo entero con longitud de 10, no nulo y secuencial (auto-incremental) -->
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" COMMENT="ID"/>
+                
+                <!-- Campo 'name' de tipo varchar con longitud máxima de 255 caracteres, no nulo -->
+                <FIELD NAME="name" TYPE="varchar" LENGTH="255" NOTNULL="true" COMMENT="Nombre"/>
+            
+            </FIELDS>
+
+            <!-- Definición de la clave primaria de la tabla, que será el campo 'id' -->
+            <PRIMARY KEY="id"/>
+        
+        </TABLE>
+    
+    </TABLES>
+
+</XMLDB>

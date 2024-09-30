@@ -1,0 +1,86 @@
+/* Estilo para el contenedor de la entrada del chat */
+#chat-container1 {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 70px; /* Altura fija */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding-bottom: 0px; /* No hay espacio en la parte inferior */
+    overflow: hidden; /* Ocultar el contenido que exceda el área */
+    background-color: #511013; /* Fondo color vino */
+    position: relative; /* Posicionamiento relativo para elementos internos */
+}
+
+/* Estilo para el contenedor de las respuestas del chat */
+#chat-container2 {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 600px; /* Altura fija */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar el contenido que exceda el área */
+    background-color: #511013; /* Fondo color vino */
+    position: relative; /* Posicionamiento relativo para elementos internos */
+}
+
+/* Contenedor para el cuadro de chat */
+#chat-box {
+    height: 100%; /* Ocupa todo el alto disponible */
+    overflow-y: auto; /* Desplazamiento vertical si el contenido excede el área */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    box-sizing: border-box; /* Incluir padding y borde en el cálculo del tamaño */
+}
+
+/* Contenedor para los mensajes de chat */
+#chat-messages {
+    display: flex; /* Usar flexbox para la distribución */
+    flex-direction: column; /* Colocar los mensajes en una columna */
+}
+
+/* Estilo genérico para los mensajes */
+.message {
+    margin-bottom: 10px; /* Espacio entre los mensajes */
+    padding: 10px; /* Espacio interno dentro del mensaje */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para los mensajes enviados por el usuario */
+.user-message {
+    background-color: #F8B688; /* Fondo de color naranja claro */
+    align-self: flex-end; /* Alinear los mensajes del usuario a la derecha */
+}
+
+/* Estilo para los mensajes del bot */
+.bot-message {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    align-self: flex-start; /* Alinear los mensajes del bot a la izquierda */
+}
+
+/* Estilo para el formulario de entrada del chat */
+#chat-form {
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    top: 0; /* Alinear en la parte superior */
+    width: 100%; /* Ancho completo del formulario */
+    padding: 10px; /* Espaciado interno */
+    padding-bottom: 0px; /* Eliminar el padding inferior */
+    margin-bottom: 0px; /* Eliminar el margen inferior */
+    box-sizing: border-box; /* Incluir padding y borde en el cálculo del tamaño */
+    background-color: #841816; /* Fondo rojo oscuro */
+    border-top: 1px solid #841816; /* Borde superior del mismo color que el fondo */
+}
+
+/* Estilo para el campo de entrada de texto en el formulario */
+#chat-form input {
+    width: calc(100% - 80px); /* Ajusta el ancho del campo de texto según el tamaño del botón */
+    padding: 8px; /* Espacio interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de enviar en el formulario */
+#chat-form top {
+    width: 70px; /* Ancho del botón */
+    padding: 8px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #E24622; /* Fondo rojo vibrante */
+    color: #fff; /* Texto en blanco */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+}
